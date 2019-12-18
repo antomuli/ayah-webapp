@@ -32,8 +32,8 @@
       <div class="body container">
         <div class="hirecard card">
           <div class="shadedarea">
-            <h3>REFINE YOUR SEARCH</h3>
-            <h3>LOCATION AND AVAILABILITY</h3>
+            <h6>REFINE YOUR SEARCH</h6>
+            <h6>LOCATION AND AVAILABILITY</h6>
           </div>
           Jobs within <select id="location">
             <option value="1">Nairobi</option>
@@ -56,34 +56,47 @@
             <option value="3">either</option>
           </select><br>
           <div class="shadedarea">
-            <h3>EMPLOYER INFORMATION</h3>
-          </div>
-          
+            <h6>EMPLOYER INFORMATION</h6>
+          </div><br>
+          Weekly Rate Range in Kes.<input type="range" name="wage" min="1857" max="25000">
+          Family Age-range<select id="familyagerange">
+            <option value="20">20something</option>
+            <option value="30">30somethin</option>
+            <option value="40">40somethin</option>
+            <option value="50">50somethin</option> 
+            <option value="60">60somethin</option>
+            <option value="70">70somethin</option>
+            <option value="80">80somethin</option>
+            <option value="90">90somethin</option>
+          </select><br>
+          Preferred Candidate age<select id="ageOfHelp">
+            <option value="18">18-30</option>
+            <option value="26">31-40</option>
+            <option value="31">41-50</option>
+            <option value="51">51-60</option>
+          </select><br>
+          <div class="shadedarea">
+            <h6>EXPERIENCE AND EDUCATION</h6>
+          </div><br>
+          Years of Experience required<input type="range" name="experience" min="0" max="50">
+          Years of Education required<input type="range" name="experience" min="0" max="30"><br>
+          Job Requirements
+          <hr>
+          <input type="checkbox" class="jobrequirements" value="Housekeeping">Housekeeping<br>
+          <input type="checkbox" class="jobrequirements" value="Shopping & Errands">Shopping & Errands<br>
+          <input type="checkbox" class="jobrequirements" value="Infant Care">Infant Care<br>
+          <input type="checkbox" class="jobrequirements" value="Special Needs Care">Special Needs Care<br>
+          <input type="checkbox" class="jobrequirements" value="Disabled Care">Disabled Care<br>
+          <input type="checkbox" class="jobrequirements" value="Elder Care">Elder Care<br>
+          <input type="checkbox" class="jobrequirements" value="Pet Care">Pet Care<br>
+          <input type="checkbox" class="jobrequirements" value="Office Assistance">Office Assistance<br>
+          <input type="checkbox" class="jobrequirements" value="Tutoring">Tutoring<br><br>
         </div>
         </div>
       
 
       </div>
-    <div class="footer">
-        <!--Twitter-->
-        <img src="./images/social_icons/twitter.png" alt="Twitter icon"><i class="fab fa-lg fa-twitter"></i></a>
-        <!--Dribbble-->
-        <img src="./images/social_icons/dribble.png" alt="Dribble icon"><i class="fab fa-lg fa-dribbble"></i></a>
-        <!--Facebook-->
-        <img src="./images/social_icons/facebook.png" alt="Facebook icon">><i class="fab fa-lg fa-facebook-f"></i></a>
-        <!--Google -->
-        <img src="./images/social_icons/g_plus.png" alt="Google_plus icon"><i class="fab fa-lg fa-google-plus-g"></i></a>
-        <!--Skype-->
-        <img src="./images/social_icons/skype.png" alt="Skype icon"><i class="fab fa-lg fa-skype"></i></a>
-        <!--Stumble Upom-->
-        <img src="./images/social_icons/stumble_upon.png" alt="stumble_upon icon"><i class="fab fa-lg fa-stumble-upon"></i></a>
-        <!--Behance-->
-        <img src="./images/social_icons/behance.png" alt="Behance icon"><i class="fab fa-lg fa-behance"></i></a>
-        <!--Pinterest-->
-        <img src="images/social_icons/pinterest.png" alt="Pinterest icon"><i class="fab fa-lg fa-pinterest"></i></a>
-        <!--Flickr-->
-        <img src="./images//social_icons/flickr.png" alt="Flickr icon"><i class="fab fa-lg fa-flickr"></i></a>
-    </div>
+
 </div>
 </body>
 </html>

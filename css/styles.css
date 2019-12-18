@@ -27,3 +27,7 @@ button {
 .hirecard {
   float:left;
 }
+.shadedarea {
+  color:aqua;
+  opacity:0.8;
+}
