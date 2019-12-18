@@ -4,7 +4,9 @@
 .card, input {
   padding: 1%;
   display:block
-
+}
+.registrationform{
+  display:none;
 }
 span .radioInline {
   display: inline-block;
@@ -16,4 +18,8 @@ span .radioInline {
 .householdSubmitForm{
   display:none;
   float:right;
+}
+button {
+  color:blue;
+  font-style:white;
 }

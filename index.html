@@ -10,26 +10,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ayah</title>
 </head>
-<body>
     <div class="container">
-    <div class="header">
-        <div class="navbar">
-            <ul>
-                <a href="index.html" class="right">Home</a>
-                <a href="about.html" class="right">About us</a>
-                <a href="how.html" class="right">How it works</a>
-                <a href="contact.html" class="right">Contact</a>
-            </ul>
-        </div>
-    </div>
-    <div class="body container">
-        <!-- <img src="./images/background-images/Aya1.jpg" alt="a cooking nanny"> -->
-        <div class="slidingImages">
-            <img src="./images/background-images/Aya1.jpg" alt="a cooking nanny">
-            <img src="./images/background-images/Aya1.jpg" alt="a cooking nanny">
-            <img src="./images/background-images/Aya1.jpg" alt="a cooking nanny">
-            <img src="./images/background-images/Aya1.jpg" alt="a cooking nanny">
-        </div>
+      <div class="header">
+          <div class="navbar">
+                  <div class="row">
+                      <div class="column">
+                          <ul>
+                              <a href="index.html">Home</a>
+                              <button id="find" onclick="window.location.href = 'find.html';">Find Job</button>
+                              <!-- <a href="find.html">Find job</a> -->
+                              <button id="hire" onclick="window.location.href = 'hire.html';">Find help</button>
+                              <!-- <a href="hire.html">Hire</a> -->
+                              <a href="log.html">Log in</a>
+                              <a href="sign.html">Sign up</a>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="body container">
+          <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Voluptatum quasi quis unde tenetur necessitatibus! 
+            Sed, praesentium commodi! Sint dolore et rem, quod sequi, 
+            veniam cum unde ex quasi placeat hic?</p>
+            <button type="submit" id="signupbutton">SIGN-UP FOR FREE</button>
+            <div class="registrationform">
+              <form name="form-reg">
+                Full Names: <input type="text" name="fullname"><br>
+                Email Address: <input type="email" name="email"><br>
+                phone number: <input type="text" name="email"><br>
+                I am a: 
+                <input type="radio" name="typeofseeker" value="jobseeker">Job Seeker
+                <input type="radio" name="typeofseeker" value="Family">Family<br>
+                Location <select>
+                  <option value="1">Nairobi</option>
+                  <option value="2">Coast</option>
+                  <option value="3">Central Kenya</option>
+                  <option value="4">Eastern Kenya</option> 
+                  <option value="5">Rift Valley</option>
+                  <option value="6">North Eastern Kenya</option>
+                  <option value="7">Western Kenya</option>
+                  <option value="8">Nyanza</option>
+                </select><br>
+                <input type="checkbox" name="t&cread">I have read and agreed to the <a href="termsandconditions.html">terms and conditions</a>
+                <input type="checkbox" name="t&cread">I have read and explicitly consented to the <a href="privatepolicy.html">privacy policy.</a>
+                <button type="submit" id="saveandcontinue">SAVE AND CONTINUE</button>
+              </form>
+          
+
+            </div>
         <div class="submitForms">
           <div class = "row">
             <div class = "col-sm-12 col-md-6 col-lg-3">
@@ -46,14 +76,14 @@
             </div>
           </div>
         </div>
-        <!-- Submit form for the household to enter their details -->
+        <!-- Submit form for the househelp to enter their details -->
         <div class="househelpSubmitForm card">
         <form name="form-reg">
           Full name: <input type="text" name="fullname">
           Date of birth: <input type="date" name="dateOfBirth" value=""
           min="2018-01-01" max="2018-12-31">
           <div class="Location">
-          Where in Kenya do you live? <select>
+          Location <select>
             <option value="1">Nairobi</option>
             <option value="2">Coast</option>
             <option value="3">Central Kenya</option>

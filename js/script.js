@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+  //Show househelp form upon clicking househelpForm button
+  $(".househelpForm" || "find").click(function(){
+    $(".househelpSubmitForm").show();
+  });
+
+   //Show household form upon clicking employerForm button
+   $(".employerForm"||"hire").click(function(){
+    $(".householdSubmitForm").show();
+  });
+
   // Househelp form data
   var househelp = $(".househelpSubmitForm form")
 
@@ -12,7 +23,7 @@ $(document).ready(function () {
 
 
   //Household form data
-  var houehold = $(".householdSubmitForm form")
+  var household = $(".householdSubmitForm form")
 
   var fullName = $('input[name="fullname"]', household).val()
   var county = $("select :selected", household).val()
