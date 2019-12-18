@@ -129,14 +129,14 @@
             <input type="radio" name="maritalStatus" value="Married" />Married
           </div>
           <div class="familySize">No. of family members <input type="number" /></div>
-          <div class="childrenOption">
-            Do you have any children? <input type="radio" name="children" value="No" />No
+          <!-- <div class="childrenOption"> -->
+            <!-- Do you have any children? <input type="radio" name="children" value="No" />No
             <input type="radio" name="children" value="Yes" />Yes
           </div>
-          <!-- If above is yes, show this -->
-          class="childrenNum"> How many children do you have?
-          <div class="Children" style="display:none"><input type="number" /></div>
-          <!-- Continue with form-->
+          If above is yes, show this -->
+          <div class="childrenNum"> How many children do you have?
+          <div class="Children" style="display:none"><input type="number" min="0" /></div>
+        
           <div class="workPreference">
             Preferred working environment <input type="radio" name="workPreference" value="Live-out" />Full-time
             <input type="radio" name="workPreference" value="Live-in" />Part-time
