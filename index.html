@@ -34,13 +34,13 @@
           <div class = "row">
             <div class = "col-sm-12 col-md-6 col-lg-3">
               <p>Are you looking for a household to work in? Fill in your profile and we'll help you find one that meets your criteria.</p>
-              <button type="Submit" class="employerSubmitForm btn btn-outline-danger">
+              <button type="Submit" id="househelpform" class="househelpSubmitForm btn btn-outline-danger">
                 Looking for a household?
               </button>  
             </div>
             <div class = "col-sm-12 col-md-6 col-lg-3">
               <p>Are you looking for a househelp? Click below to enter your details and we'll help you get a perfect match!</p>
-              <button type="Submit" class="househelpSubmitForm btn btn-outline-danger">
+              <button type="Submit" id="employerform" class="employerSubmitForm btn btn-outline-danger">
                 Looking for a househelp?
               </button>
             </div>
@@ -65,14 +65,16 @@
           </select>
           </div>
           <div class="maritalStatus">
-          Marital Status: &NonBreakingSpace;
+          Marital Status: 
           <input type="radio" name="maritalStatus" value="Single">Single
           <input type="radio" name="maritalStatus" value="Married">Married
           </div>
           <div class="workPreference">
-          Preferred working environment&NonBreakingSpace;
+            <span>
+          Preferred working environment
           <input type="radio" name="stay" value="dayBug">dayBug
           <input type="radio" name="stay" value="inhouse">In-house
+          </span>
           </div>
           <div class="Skills">
           Please list the skills you have
@@ -90,7 +92,7 @@
         </form>
       </div><br><br>
 <!-- Submit form for the household to enter their details -->
-      <div class="householdSubmitForm card">
+      <div class="employerSubmitForm card">
         <div name="form-reg">
           Full name: <input type="text" name="fullname">
           <div class="location">
@@ -106,35 +108,43 @@
           </select>
           </div>
           <div class="maritalStatus">
+            <span>
           Marital Status: 
           <input type="radio" name="maritalStatus" value="Single">Single
           <input type="radio" name="maritalStatus" value="Married">Married
+          </span>
           </div>
           <div class="familySize">
           No. of family members
           <input type="number">
           </div>
           <div class="childrenOption">
+            <span>
           Do you have any children?
           <input type="radio" name="children" value="No">No
           <input type="radio" name="children" value="Yes">Yes
+          </span>
           </div>
           <!-- If above is yes, show this -->
-           class="childrenNum">
+           <div class="childrenNum">
           How many children do you have?
           <div class = "Children" style="display:none">
             <input type="number">
           </div>
           <!-- Continue with form-->
-          Would you like a daybug or in-house househelp?
           <div class="stay">
+            <span>
+          Would you like a daybug or in-house househelp?
           <input type="radio" name="stay" value="daybug">Daybug
           <input type="radio" name="stay" value="inhouse">In-house
+          </span>
           </div>
           <div class="helpGender">
+            <span>
           What gender do you prefer?
           <input type="radio" name="househelpGender" value="Female">Female
           <input type="radio" name="househelpGender" value="Male">Male
+          </span>
           </div>
           <div class=ageOfHelp>
           Give the range of age you prefer the help to be

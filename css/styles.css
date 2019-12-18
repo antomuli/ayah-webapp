@@ -6,12 +6,12 @@
   display:block
 
 }
-span .radioInline {
+span {
   display: inline-block;
 }
-.househelpSubmitForm{
-  display:block
+.househelpform{
+  display:none;
 }
-.householdSubmitForm{
-  display:block;
+.employerform{
+  display:none;
 }
