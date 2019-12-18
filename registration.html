@@ -31,12 +31,50 @@
       </div>
       <div class="body container">
         <div class = row>
-          <div class = "col-sm-1 col-md-6 col-lg-6 card">
-
+          <div class = "col-4 card">
           </div>
-          <div class = "col-sm-1 col-md-6 col-lg-6 card">
-            
-          </div>
+          <!-- Quick question, the col above should be smaller than the one below. How do I make that. Sitake ziwe the same size -->
+          <!-- Am I really getting what you're trying to do... Aki sikupati-->
+          <!-- If I use  col-sm-1 col-md-6 col-lg-6 for both columns, zitatoshana. But nataka ya right iwe konda kuliko ya right-->
+          <!-- You just make the grid size abit smaller i.e., col-md-2 or something... With this you can set say the left side as col-md-2 then right at col-md-10 -->
+          <!-- Imework thanks and I hear you. will do that -->
+          <!-- Yeah, so for now just use col-{unit size}. the sm, md and lg variants tutaziadd tukiimake mobile responsive -->
+          <!-- e.g col-{unit size} -just col-4, col-3 that way.. -->
+          <!-- Something else, concentrate on making the page responsive on your current viewport size then we'll deal with mobile responsiveness kando -->
+          <div class = "col-6 card registrationform">
+              <form id="registrationForm">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter fullname">
+                </div>
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                </div>
+                I am a: <input type="radio" name="typeOfSeeker" value="jobSeeker" />Job Seeker
+                <input type="radio" name="typeOfSeeker" value="family" />Family<br />
+                Location
+                <select>
+                  <option value="1">Nairobi</option>
+                  <option value="2">Coast</option>
+                  <option value="3">Central Kenya</option>
+                  <option value="4">Eastern Kenya</option>
+                  <option value="5">Rift Valley</option>
+                  <option value="6">North Eastern Kenya</option>
+                  <option value="7">Western Kenya</option>
+                  <option value="8">Nyanza</option> </select
+                ><br />
+                <input type="checkbox" name="t&cread" />I have read and agreed to the
+                <a href="termsandconditions.html">terms and conditions</a> <input type="checkbox" name="t&cread" />I have read
+                and explicitly consented to the <a href="privatepolicy.html">privacy policy.</a><br><br>
+                <hr>
+                <button type="submit" id="saveandcontinue">SAVE AND CONTINUE</button>
+              </form>
+            </div>
         </div>
          
 

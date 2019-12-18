@@ -127,6 +127,12 @@ button {
   color: aqua;
   opacity: 0.8;
 }
+.registrationform {
+  display:block;
+  padding: 1% 1%;
+  margin: 10px 10px;
+  background-color: ;
+}
 /* Add a black background on the navigation */
 .navbar {
   background-color: #333;
