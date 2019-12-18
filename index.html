@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"> -->
     <link rel="css/stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ayah</title>
@@ -101,9 +101,14 @@
           </div>
           <div class="workPreference">
           Preferred working environment&NonBreakingSpace;
-          <input type="radio" name="stay" value="dayBug">dayBug
-          <input type="radio" name="stay" value="inhouse">In-house
+          <input type="radio" name="workPreference" value="Live-out">Full-time
+          <input type="radio" name="workPreference" value="Live-in">Part-time
           </div>
+          <div class="stay">
+            Preferred working environment&NonBreakingSpace;
+            <input type="radio" name="stay" value="dayBug">Live-out
+            <input type="radio" name="stay" value="inhouse">Live-in
+            </div>
           <div class="Skills">
           Please list the skills you have
           <input type="text-area" name="Skills">
@@ -156,10 +161,15 @@
             <input type="number">
           </div>
           <!-- Continue with form-->
+          <div class="workPreference">
+            Preferred working environment&NonBreakingSpace;
+            <input type="radio" name="workPreference" value="Live-out">Full-time
+            <input type="radio" name="workPreference" value="Live-in">Part-time
+            </div>
           Would you like a daybug or in-house househelp?
           <div class="stay">
-          <input type="radio" name="stay" value="daybug">Daybug
-          <input type="radio" name="stay" value="inhouse">In-house
+          <input type="radio" name="stay" value="daybug">Live-out
+          <input type="radio" name="stay" value="inhouse">Live-in
           </div>
           <div class="helpGender">
           What gender do you prefer?
@@ -212,5 +222,7 @@
         <img src="./images//social_icons/flickr.png" alt="Flickr icon"><i class="fab fa-lg fa-flickr"></i></a>
     </div>
 </div>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

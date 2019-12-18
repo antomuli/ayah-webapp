@@ -10,6 +10,11 @@ $(document).ready(function () {
     $(".householdSubmitForm").show();
   });
 
+  //Show registration form opon clicking signupbutton
+  $(".signupbutton").click(function(){
+    $(".registrationform").show();
+  });
+
   // Househelp form data
   var househelp = $(".househelpSubmitForm form")
 

@@ -23,3 +23,7 @@ button {
   color:blue;
   font-style:white;
 }
+/* Styling for hire page */
+.hirecard {
+  float:left;
+}
