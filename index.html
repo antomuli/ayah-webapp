@@ -47,11 +47,21 @@
           </div>
         </div>
         <!-- Submit form for the household to enter their details -->
-        <div class="househelpSubmitForm">
+        <div class="househelpSubmitForm card">
           <form name="form-reg">
+            <div class="form-control">
+              <label for="full-name">
             Full name: <input type="text" name="fullname">
+            </label>
+            </div>
+            <div class="form-control">
+              <label for="date">
             Date of birth: <input type="date" name="dateOfBirth" value=""
-            min="2018-01-01" max="2018-12-31">>
+            min="2018-01-01" max="2018-12-31">
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="location">
             Where in Kenya do you live? <select>
               <option value="1">Nairobi</option>
               <option value="2">Coast</option>
@@ -62,14 +72,30 @@
               <option value="7">Western Kenya</option>
               <option value="8">Nyanza</option>
             </select>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="radioInline" name="maritalStatus">
             Marital Status: 
             <input type="radio" name="maritalStatus" value="Single">Single
             <input type="radio" name="maritalStatus" value="Married">Married
+          </label>
+        </div>
+            <div class="form-control">
+              <label for="radioInline" name="workpreference">
             Preferred working environment
-            <input type="radio" name="maritalStatus" value="dayBug">dayBug
-            <input type="radio" name="maritalStatus" value="inhouse">In-house
+            <input type="radio" name="workpreference" value="dayBug">dayBug
+            <input type="radio" name="workpreference" value="inhouse">In-house
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="radioInline" name="skills">
             Please list the skills you have
             <input type="text-area" name="Skills">
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="radioInline" name="Education">
             What's your highest level of education
             <select>
               <option value="Primary">Primary school Level</option>
@@ -77,13 +103,22 @@
               <option value="Undergraduate">Undergraduate</option>
               <option value="Vocational">Primary Level</option>
             </select>
+          </label>
+        </div>
           </form>
-        </div><br><br>
+        </div>
 <!-- Submit form for the household to enter their details -->
-        <div class="householdSubmitForm">
+        <div class="householdSubmitForm card">
           <form name="form-reg">
-            Full name: <input type="text" name="fullname">
-            Where in Kenya do you live? <select>
+            <div class="form-control">
+            <label for="full-name">
+              Full name: <input type="text" name="fullname">
+              </label>
+              </div>
+              <div class="form-control">
+                <label for="location">
+            Where in Kenya do you live? 
+            <select>
               <option value="1">Nairobi</option>
               <option value="2">Coast</option>
               <option value="3">Central Kenya</option>
@@ -93,26 +128,78 @@
               <option value="7">Western Kenya</option>
               <option value="8">Nyanza</option>
             </select>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="maritalStatus">
             Marital Status: 
             <input type="radio" name="maritalStatus" value="Single">Single
             <input type="radio" name="maritalStatus" value="Married">Married
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="familyNumber">
             No. of family members
             <input type="number">
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="children">
             Do you have any children?
             <input type="radio" name="children" value="No">No
             <input type="radio" name="children" value="Yes">Yes
+          </label>
+        </div>
             <!-- If above is yes, show this -->
-            How many children do you have?
             <div class = "Children" style="display:none">
+            How many children do you have?
               <input type="number">
             </div>
             <!-- Continue with form-->
+            <div class="form-control">
+              <label for="radioInline" name="children">
             Would you like a daybug or in-house househelp?
             <input type="radio" name="stay" value="daybug">Daybug
             <input type="radio" name="stay" value="inhouse">In-house
+          </label>
+        </div>
+            <!-- If above is Daybug, show this -->
+            <div class="form-control">
+              <label for="workinghours">
+            How many hours would you like the help to work a day
+            <div class = "dayBugHours">
+              <select>
+                <optgroup label="Weekdays">
+                  <option>2 hours</option>
+                  <option>4 hours</option>
+                  <option>6 hours</option>
+                  <option>8 hours</option>
+                </optgroup>
+                <optgroup label="Weekends">
+                  <option>2 hours</option>
+                  <option>4 hours</option>
+                  <option>6 hours</option>
+                  <option>8 hours</option>
+                </optgroup>
+                <optgroup label="WeekdaysAndWeekends">
+                  <option>2 hours</option>
+                  <option>4 hours</option>
+                  <option>6 hours</option>
+                  <option>8 hours</option>
+                </optgroup>
+              </select>
+            </div>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="workinghours">
+            <span class="radioInline">
             What gender do you prefer?
             <input type="radio" name="househelpGender" value="Female">Female
             <input type="radio" name="househelpGender" value="Male">Male
+            </span>
+          </label>
+        </div>
             Give the range of age you prefer the help to be
             <select id="ageOfHelp">
               <option value="18">18-30</option>
@@ -121,7 +208,7 @@
               <option value="51">51-60</option>
             </select>
             List any particular skills you would like the help to have
-            <input type="text-area" name="Skills">
+            <input type="text-area" name="Skills"><br>
             What's the highest level of education you would like the help to have?
             <select>
               <option value="Primary">Primary school Level</option>
