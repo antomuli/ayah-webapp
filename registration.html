@@ -60,9 +60,9 @@
                   <input class="form-check-input" type="radio" name="typeOfSeeker" id="family" value="family">
                   <label class="form-check-label" for="family">Family</label>
                 </div>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-label" for="location">Location</label>
-                  <select id="location" class="form-control col-sm-9">
+                <div class="form-group form-inline">
+                  <label for="location" class="col-form-label">Location</label>
+                  <select id="location" class="custom-select">
                     <option value="1">Nairobi</option>
                     <option value="2">Coast</option>
                     <option value="3">Central Kenya</option>
@@ -73,11 +73,16 @@
                     <option value="8">Nyanza</option>
                   </select>
                 </div>
-                <input type="checkbox" name="t&cread" />I have read and agreed to the
-                <a href="termsandconditions.txt">terms and conditions</a> <input type="checkbox" name="t&cread" />I have read
-                and explicitly consented to the <a href="privatepolicy.txt">privacy policy.</a><br><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" id="readTerms" type="checkbox" value="30" />
+                  <label class="form-check-label" for="readTerms">I have read and agree to the <a href="termsandconditions.txt">Terms of Use</a>.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" id="readPrivacy" type="checkbox" value="50" />
+                  <label class="form-check-label" for="readPrivacy">I have read and explicitly consent to the <a href="privatepolicy.txt">Privacy Policy</a>.</label>
+                </div>
                 <hr>
-                <button type="submit" id="saveandcontinue">SAVE AND CONTINUE</button>
+                <button type="submit" class="btn btn-primary" id="saveandcontinue">Save &amp; Continue</button>
               </form>
             </div>
         </div>
