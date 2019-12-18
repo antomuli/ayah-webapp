@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   var fullName = $('input[name="fullname"]', household).val()
   var county = $("select :selected", household).val()
-  var maritalStatus = $('input[name="maritalStatus"]', householp).val()
+  var maritalStatus = $('input[name="maritalStatus"]', household).val()
   var totalNumberOfFamilyMembers = $('input[type="number"]', household).val()
   var children = $('.children', household).val()
   var preference = $('input[name="stay"]', household).val()
