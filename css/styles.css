@@ -116,9 +116,9 @@ button {
   opacity:0.3;
   transition:all-ease 0.8s;
 }
-#checked:hover {
-  opacity:7;
-}
+/* #checked:hover {
+  opacity:1;
+} */
 /* Styling for hire page */
 .hirecard {
   float: left;

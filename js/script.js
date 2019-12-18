@@ -1,6 +1,7 @@
 $(document).ready(function() {
   //Opacity to 1 on clicking checkboxes
-  $("#checked"):active {opacity:1;}
+  $("label#checked"):active {opacity:1;}
+  $("#checked"):visited {opacity:1;}
   //Show househelp form upon clicking househelpForm button
   $(".househelpForm" || "find").click(function() {
     $(".househelpSubmitForm").show();
