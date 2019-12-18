@@ -30,28 +30,125 @@
           </div>
       </div>
       <div class="body container">
-
+        <div class="hirecard card">
+          <div class="shadedarea">
+            <h6>REFINE YOUR SEARCH</h6>
+            <h6>LOCATION AND AVAILABILITY</h6>
+          </div>
+          Candidates who live in <select id="location">
+            <option value="1">Nairobi</option>
+            <option value="2">Coast</option>
+            <option value="3">Central Kenya</option>
+            <option value="4">Eastern Kenya</option> 
+            <option value="5">Rift Valley</option>
+            <option value="6">North Eastern Kenya</option>
+            <option value="7">Western Kenya</option>
+            <option value="8">Nyanza</option>
+          </select><br>
+          Seeking <select id="fullOrPartTime">
+            <option value="1">Fulltime or partime</option>
+            <option value="2">Fulltime</option>
+            <option value="3">Fulltime</option>
+          </select><br>
+          Seeking <select id="stay">
+            <option value="1">leave-in</option>
+            <option value="2">leave-out</option>
+            <option value="3">either</option>
+          </select><br>
+          <div class="shadedarea">
+            <h6>GENERAL INFORMATION</h6>
+          </div><br>
+          <div class="range-labels">
+            <fieldset>
+              <label for="rangeVal">Age Range</label>
+              <input type ="range" max="75" min="18"
+                  oninput="document.getElementById('rangeValLabel-age').innerHTML = this.value;"
+                  step="1" name="rangeVal-age" id="rangeVal-age" value="">
+              </input>
+              <em id="rangeValLabel-age" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
+          <div class="range-labels">
+            <fieldset>
+              <label for="rangeVal">Weekly Rate Range in Kes.:</label>
+              <input type ="range" max="25000" min="1000"
+                  oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+                  step="5" name="rangeVal" id="rangeVal" value="">
+              </input>
+              <em id="rangeValLabel" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
+        <div class="helpGender">
+          Gender
+          <input type="radio" name="househelpGender" value="Female">Female
+          <input type="radio" name="househelpGender" value="Male">Male
+          </div><br>
+          Type of Family
+          <select id="familyPreference">
+            <option value="singles">Singles Only</option>
+            <option value="couples">Couples Only</option>
+            </select><br>
+          Family Age-range<select id="familyagerange">
+            <option value="20">20something</option>
+            <option value="30">30something</option>
+            <option value="40">40something</option>
+            <option value="50">50something</option> 
+            <option value="60">60something</option>
+            <option value="70">70something</option>
+            <option value="80">80something</option>
+            <option value="90">90something</option>
+          </select><br><br>
+          <div class="shadedarea">
+            <h6>EXPERIENCE ANDEDUCATION</h6>
+          </div><br>
+          <!-- Years of Experience required<input type="range" name="experience" min="0" max="50"> -->
+          <div class="range-labels" id="experienceyears">
+            <fieldset>
+              <label for="rangeVal-experience">Years of Experience required:</label>
+              <input type ="range" max="50" min="0"
+                  oninput="document.getElementById('rangeValLabel-exp').innerHTML = this.value;"
+                  step="5" name="rangeValExp" id="rangeValExp" value="">
+              </input>
+              <em id="rangeValLabel-exp" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
+          <!-- Years of Education required<input type="range" name="experience" min="0" max="30"><br> -->
+          <div class="range-labels" id="educationyears">
+            <fieldset>
+              <label for="rangeVal-education">Years of Education required:</label>
+              <input type ="range" max="30" min="0"
+                  oninput="document.getElementById('rangeValLabel-edu').innerHTML = this.value;"
+                  step="1" name="rangeValEdu" id="rangeValEdu" value="">
+              </input>
+              <em id="rangeValLabel-edu" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
+          Job Requirements
+          <input type="checkbox" class="jobrequirements" value="Housekeeping">Housekeeping<br>
+          <input type="checkbox" class="jobrequirements" value="Shopping & Errands">Shopping & Errands<br>
+          <input type="checkbox" class="jobrequirements" value="Infant Care">Infant Care<br>
+          <input type="checkbox" class="jobrequirements" value="Special Needs Care">Special Needs Care<br>
+          <input type="checkbox" class="jobrequirements" value="Disabled Care">Disabled Care<br>
+          <input type="checkbox" class="jobrequirements" value="Elder Care">Elder Care<br>
+          <input type="checkbox" class="jobrequirements" value="Pet Care">Pet Care<br>
+          <input type="checkbox" class="jobrequirements" value="Office Assistance">Office Assistance<br>
+          <input type="checkbox" class="jobrequirements" value="Tutoring">Tutoring<br><br>
+          Will work for
+          <input type="checkbox" class="smokingpreference" value="Smoker">Smoker<br>
+          PaidExperience
+          <input type="checkbox" class="PaidExperience" value="Infant">Infant<br>
+          <input type="checkbox" class="PaidExperience" value="Toddler">Toddler<br>
+          <input type="checkbox" class="PaidExperience" value="Ages 4-11">Ages 4-11<br>
+          <input type="checkbox" class="PaidExperience" value="Preteen">Preteen<br>
+          <input type="checkbox" class="PaidExperience" value="Teen">Teen<br>
+          <input type="checkbox" class="PaidExperience" value="Twins">Twins<br>
+          <input type="checkbox" class="PaidExperience" value="Special Needs">Special Needs<br>
+          <br><br>
+          <hr>
+        </div>
+        </div>
       </div>
-    <div class="footer">
-        <!--Twitter-->
-        <img src="./images/social_icons/twitter.png" alt="Twitter icon"><i class="fab fa-lg fa-twitter"></i></a>
-        <!--Dribbble-->
-        <img src="./images/social_icons/dribble.png" alt="Dribble icon"><i class="fab fa-lg fa-dribbble"></i></a>
-        <!--Facebook-->
-        <img src="./images/social_icons/facebook.png" alt="Facebook icon">><i class="fab fa-lg fa-facebook-f"></i></a>
-        <!--Google -->
-        <img src="./images/social_icons/g_plus.png" alt="Google_plus icon"><i class="fab fa-lg fa-google-plus-g"></i></a>
-        <!--Skype-->
-        <img src="./images/social_icons/skype.png" alt="Skype icon"><i class="fab fa-lg fa-skype"></i></a>
-        <!--Stumble Upom-->
-        <img src="./images/social_icons/stumble_upon.png" alt="stumble_upon icon"><i class="fab fa-lg fa-stumble-upon"></i></a>
-        <!--Behance-->
-        <img src="./images/social_icons/behance.png" alt="Behance icon"><i class="fab fa-lg fa-behance"></i></a>
-        <!--Pinterest-->
-        <img src="images/social_icons/pinterest.png" alt="Pinterest icon"><i class="fab fa-lg fa-pinterest"></i></a>
-        <!--Flickr-->
-        <img src="./images//social_icons/flickr.png" alt="Flickr icon"><i class="fab fa-lg fa-flickr"></i></a>
-    </div>
+
 </div>
 </body>
 </html>

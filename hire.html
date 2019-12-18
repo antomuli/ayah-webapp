@@ -58,16 +58,25 @@
           <div class="shadedarea">
             <h6>EMPLOYER INFORMATION</h6>
           </div><br>
-          Weekly Rate Range in Kes.<input type="range" name="wage" min="1857" max="25000">
+          <div class="range-labels">
+            <fieldset>
+              <label for="rangeVal">Weekly Rate Range in Kes.:</label>
+              <input type ="range" max="25000" min="1000"
+                  oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+                  step="5" name="rangeVal" id="rangeVal" value="">
+              </input>
+              <em id="rangeValLabel" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
           Family Age-range<select id="familyagerange">
             <option value="20">20something</option>
-            <option value="30">30somethin</option>
-            <option value="40">40somethin</option>
-            <option value="50">50somethin</option> 
-            <option value="60">60somethin</option>
-            <option value="70">70somethin</option>
-            <option value="80">80somethin</option>
-            <option value="90">90somethin</option>
+            <option value="30">30something</option>
+            <option value="40">40something</option>
+            <option value="50">50something</option> 
+            <option value="60">60something</option>
+            <option value="70">70something</option>
+            <option value="80">80something</option>
+            <option value="90">90something</option>
           </select><br>
           Preferred Candidate age<select id="ageOfHelp">
             <option value="18">18-30</option>
@@ -78,8 +87,28 @@
           <div class="shadedarea">
             <h6>EXPERIENCE AND EDUCATION</h6>
           </div><br>
-          Years of Experience required<input type="range" name="experience" min="0" max="50">
-          Years of Education required<input type="range" name="experience" min="0" max="30"><br>
+          <!-- Years of Experience required<input type="range" name="experience" min="0" max="50"> -->
+          <div class="range-labels" id="experienceyears">
+            <fieldset>
+              <label for="rangeVal-experience">Years of Experience required:</label>
+              <input type ="range" max="50" min="0"
+                  oninput="document.getElementById('rangeValLabel-exp').innerHTML = this.value;"
+                  step="5" name="rangeValExp" id="rangeValExp" value="">
+              </input>
+              <em id="rangeValLabel-exp" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
+          <!-- Years of Education required<input type="range" name="experience" min="0" max="30"><br> -->
+          <div class="range-labels" id="educationyears">
+            <fieldset>
+              <label for="rangeVal-education">Years of Education required:</label>
+              <input type ="range" max="30" min="0"
+                  oninput="document.getElementById('rangeValLabel-edu').innerHTML = this.value;"
+                  step="1" name="rangeValEdu" id="rangeValEdu" value="">
+              </input>
+              <em id="rangeValLabel-edu" style="font-style: normal;"></em>
+            </fieldset>
+        </div>
           Job Requirements
           <hr>
           <input type="checkbox" class="jobrequirements" value="Housekeeping">Housekeeping<br>
@@ -93,8 +122,6 @@
           <input type="checkbox" class="jobrequirements" value="Tutoring">Tutoring<br><br>
         </div>
         </div>
-      
-
       </div>
 
 </div>
