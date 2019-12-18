@@ -110,6 +110,15 @@ button {
   color: blue;
   font-style: white;
 }
+/* Opacity changes on hovering over checkboxes */
+#checked {
+  cursor:pointer;
+  opacity:0.3;
+  transition:all-ease 0.8s;
+}
+#checked:hover {
+  opacity:7;
+}
 /* Styling for hire page */
 .hirecard {
   float: left;
