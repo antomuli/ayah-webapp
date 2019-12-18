@@ -71,7 +71,12 @@
             Please list the skills you have
             <input type="text-area" name="Skills">
             What's your highest level of education
-            <input type="text" name="fullname">
+            <select>
+              <option value="Primary">Primary school Level</option>
+              <option value="Secondary">Secondary/High school Level</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Vocational">Primary Level</option>
+            </select>
           </form>
         </div><br><br>
 <!-- Submit form for the household to enter their details -->
@@ -95,14 +100,35 @@
             <input type="number">
             Do you have any children?
             <input type="radio" name="children" value="No">No
-            <input type="radio" name="children" value="Yes">Married
-            Preferred working environment
-            <input type="radio" name="maritalStatus" value="dayBug">dayBug
-            <input type="radio" name="maritalStatus" value="inhouse">In-house
-            Please list the skills you have
+            <input type="radio" name="children" value="Yes">Yes
+            <!-- If above is yes, show this -->
+            How many children do you have?
+            <div class = "Children" style="display:none">
+              <input type="number">
+            </div>
+            <!-- Continue with form-->
+            Would you like a daybug or in-house househelp?
+            <input type="radio" name="stay" value="daybug">Daybug
+            <input type="radio" name="stay" value="inhouse">In-house
+            What gender do you prefer?
+            <input type="radio" name="househelpGender" value="Female">Female
+            <input type="radio" name="househelpGender" value="Male">Male
+            Give the range of age you prefer the help to be
+            <select id="ageOfHelp">
+              <option value="18">18-30</option>
+              <option value="26">31-40</option>
+              <option value="31">41-50</option>
+              <option value="51">51-60</option>
+            </select>
+            List any particular skills you would like the help to have
             <input type="text-area" name="Skills">
-            What's your highest level of education
-            <input type="text" name="fullname">
+            What's the highest level of education you would like the help to have?
+            <select>
+              <option value="Primary">Primary school Level</option>
+              <option value="Secondary">Secondary/High school Level</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Vocational">Primary Level</option>
+            </select>
           </form>
         </div>
     </div>
