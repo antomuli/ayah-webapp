@@ -102,9 +102,6 @@ input {
   padding: 1%;
   display: block;
 }
-.registrationform {
-  display: none;
-}
 span .radioInline {
   display: inline-block;
 }
@@ -138,12 +135,6 @@ button {
   opacity: 0.8;
 }
 /* registration page styling */
-.registrationform {
-  display:block;
-  padding: 1% 1%;
-  margin: 10px 10px;
-  background-color: ;
-}
 .textdiv {
   background-color: skyblue
 }
