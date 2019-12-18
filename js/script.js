@@ -17,6 +17,8 @@ $(document).ready(function() {
     $(".registrationform").show();
   });
 
+  //Show text file below tlc and private policy links
+
   //Script for range-labels
   // define a lookup for what text should be displayed for each value in your range
   var rangeValues = {

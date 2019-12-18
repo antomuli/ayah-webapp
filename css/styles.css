@@ -127,11 +127,20 @@ button {
   color: aqua;
   opacity: 0.8;
 }
+/* registration page styling */
 .registrationform {
   display:block;
   padding: 1% 1%;
   margin: 10px 10px;
   background-color: ;
+}
+.textdiv {
+  background-color: skyblue
+}
+.textblock {
+  display:block;
+  padding-top:65%;
+  padding-bottom: 25%;
 }
 /* Add a black background on the navigation */
 .navbar {
