@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>Ayah</title>
+  </head>
+  <body style="height: 100vh;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+      <a class="navbar-brand" href="index.html">Ayah WebApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="find" onclick="window.location.href = 'find.html';">Find Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hire" onclick="window.location.href = 'hire.html';">Hire</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="log.html">Log in</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign.html">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- I need your au pair login details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 card textdiv">
+          <p class="text-center">
+            Ayah helps you to find access to numerous nanny jobs or help you get a nanny for your family<br />
+            Join us today to become part of the Ayah Community who have found opportunities as nannies with great
+            families or got a nanny through Ayah.<br />
+            We value your privacy and any private information will be kept strictly confidential.
+          </p>
+        </div>
+        <div class="col-md-6 card registrationform">
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter fullname" />
+            </div>
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Enter email" />
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phone number" />
+            </div>
+            <div class="form-group">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="seekOrHire" id="jobSeeker" value="jobSeeker" />
+                <label class="form-check-label" for="jobSeeker">Job Seeker</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="seekOrHire" id="family" value="family" />
+                <label class="form-check-label" for="family">Family</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fullName">Location</label>
+              <select id="location" class="form-control custom-select">
+                <option value="1">Nairobi</option>
+                <option value="2">Coast</option>
+                <option value="3">Central Kenya</option>
+                <option value="4">Eastern Kenya</option>
+                <option value="5">Rift Valley</option>
+                <option value="6">North Eastern Kenya</option>
+                <option value="7">Western Kenya</option>
+                <option value="8">Nyanza</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" id="readTCs" type="checkbox" />
+                <label class="form-check-label" for="readTCs"
+                  >I have read and agree to the <a href="termsandconditions.txt">Terms of Use</a>.</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" id="readPrivacy" type="checkbox" />
+                <label class="form-check-label" for="readPrivacy"
+                  >I have read and explicitly consent to the <a href="privatepolicy.txt">Privacy Policy</a>.</label
+                >
+              </div>
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-primary" id="saveandcontinue">Save &amp; Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

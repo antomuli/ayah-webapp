@@ -13,11 +13,21 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
 
+/* Hey checkout the registration page...
+Its more bootstrap but if you could try use the pattern itakuja through very easily */
+/* Text over slideshow */
+.textonimage {
+ position: absolute; 
+ top: 200px; 
+ float:left;
+ padding-left: 1%;
+  
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -92,24 +102,30 @@ input {
   padding: 1%;
   display: block;
 }
-.registrationform {
-  display: none;
-}
 span .radioInline {
   display: inline-block;
 }
 .househelpSubmitForm {
   display: none;
-  float: left;
+  /* float: left; */
 }
 .householdSubmitForm {
   display: none;
-  float: right;
+  /* float: right; */
 }
 button {
   color: blue;
   font-style: white;
 }
+/* Opacity changes on hovering over checkboxes */
+#checked {
+  cursor:pointer;
+  opacity:0.3;
+  transition:all-ease 0.8s;
+}
+/* #checked:hover {
+  opacity:1;
+} */
 /* Styling for hire page */
 .hirecard {
   float: left;
@@ -118,26 +134,12 @@ button {
   color: aqua;
   opacity: 0.8;
 }
-/* Add a black background on the navigation */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
+/* registration page styling */
+.textdiv {
+  background-color: skyblue
 }
-/* Styling the links inside the navigation bar */
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-/* change the color of links on hover */
-.navbar a:hover {
-  background-color: whitesmoke;
-  color: black;
-}
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: grey;
+.textblock {
+  display:block;
+  padding-top:65%;
+  padding-bottom: 25%;
 }

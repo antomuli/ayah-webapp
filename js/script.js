@@ -1,11 +1,15 @@
 $(document).ready(function() {
+  //Opacity to 1 on clicking checkboxes
+  $("label#checked"):active {opacity:1;}
+  $("#checked"):visited {opacity:1;}
+
   //Show househelp form upon clicking househelpForm button
-  $(".househelpForm" || "find").click(function() {
+  $(".househelpForm").click(function() {
     $(".househelpSubmitForm").show();
   });
 
   //Show household form upon clicking employerForm button
-  $(".employerForm" || "hire").click(function() {
+  $(".employerForm").click(function() {
     $(".householdSubmitForm").show();
   });
 
@@ -13,6 +17,8 @@ $(document).ready(function() {
   $(".signupbutton").click(function() {
     $(".registrationform").show();
   });
+
+  //Show text file below tlc and private policy links
 
   //Script for range-labels
   // define a lookup for what text should be displayed for each value in your range
