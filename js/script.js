@@ -1,3 +1,4 @@
+let ayahAccounts = [];
 $(document).ready(function() {
   // Handle registration form data
   $(".registrationform form").submit(function(event) {
@@ -78,6 +79,21 @@ $(document).ready(function() {
   var skills = $('input[name="skills"]', household).val();
   var education = $("select :selected", household).val();
 });
+
+// Create AyahAccount constructor
+function AyahAccount(fullName, emailAddress, phoneNumber, accountType, residence) {
+  this.fullName = fullName;
+  this.emailAddress = emailAddress;
+  this.phoneNumber = phoneNumber;
+  this.accountType = accountType;
+  this.residence = residence;
+}
+// Create a function to store account
+function registerAccount(account) {
+  ayahAccounts.push(account);
+  alert("Account Successfully Created!");
+}
+
 var slideIndex = 0;
 showSlides();
 
