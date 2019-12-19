@@ -1,8 +1,24 @@
 $(document).ready(function() {
-  //Opacity to 1 on clicking checkboxes
-  $("label#checked"):active {opacity:1;}
-  $("#checked"):visited {opacity:1;}
+  // Handle registration form data
+  $(".registrationform form").submit(function(event) {
+    let fullName = $("#fullName").val();
+    let emailAddress = $("#emailAddress").val();
+    let phoneNumber = $("#phoneNumber").val();
 
+    let seekOrHire = $("#seekOrHire :checked").val();
+    let residence = $("#residence :selected").val();
+
+    let readAgree = $("#readAgree :checked");
+
+    // Check that all checkboxes are checked
+    if (readAgree.length > 1) {
+      var newAccount = new AyahAccount(fullName, emailAddress, phoneNumber, seekOrHire, residence);
+      registerAccount(newAccount);
+      console.log(newAccount);
+    }
+
+    event.preventDefault();
+  });
   //Show househelp form upon clicking househelpForm button
   $(".househelpForm").click(function() {
     $(".househelpSubmitForm").show();
