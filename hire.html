@@ -1,129 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="css/stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="css/stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Ayah</title>
-</head>
-    <div class="container">
-      <div class="header">
-          <div class="navbar">
-                  <div class="row">
-                      <div class="column">
-                          <ul>
-                              <a href="index.html">Home</a>
-                              <button id="find" onclick="window.location.href = 'find.html';">Find Job</button>
-                              <!-- <a href="find.html">Find job</a> -->
-                              <button id="hire" onclick="window.location.href = 'hire.html';">Find help</button>
-                              <!-- <a href="hire.html">Hire</a> -->
-                              <a href="log.html">Log in</a>
-                              <a href="sign.html">Sign up</a>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+      <a class="navbar-brand" href="index.html">Ayah WebApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="find" onclick="window.location.href = 'find.html';">Find Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hire" onclick="window.location.href = 'hire.html';">Hire</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="log.html">Log in</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign.html">Sign up</a></li>
+        </ul>
       </div>
-      <div class="body container">
-        <div class="hirecard card">
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 card">
           <div class="shadedarea">
             <h6>REFINE YOUR SEARCH</h6>
             <h6>LOCATION AND AVAILABILITY</h6>
           </div>
-          Jobs within <select id="location">
-            <option value="1">Nairobi</option>
-            <option value="2">Coast</option>
-            <option value="3">Central Kenya</option>
-            <option value="4">Eastern Kenya</option> 
-            <option value="5">Rift Valley</option>
-            <option value="6">North Eastern Kenya</option>
-            <option value="7">Western Kenya</option>
-            <option value="8">Nyanza</option>
-          </select><br>
-          Seeking <select id="fullOrPartTime">
-            <option value="1">Fulltime or partime</option>
-            <option value="2">Fulltime</option>
-            <option value="3">Fulltime</option>
-          </select><br>
-          Seeking <select id="stay">
-            <option value="1">leave-in</option>
-            <option value="2">leave-out</option>
-            <option value="3">either</option>
-          </select><br>
+          <form id="searchFilters">
+            <div class="form-group">
+              <label for="residence">Jobs within:</label>
+              <select id="residence" class="form-control custom-select">
+                <option value="nairobi">Nairobi</option>
+                <option value="coast">Coast</option>
+                <option value="central">Central Kenya</option>
+                <option value="eastern">Eastern Kenya</option>
+                <option value="rift-valley">Rift Valley</option>
+                <option value="north-eastern">North Eastern Kenya</option>
+                <option value="western">Western Kenya</option>
+                <option value="nyanza">Nyanza</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fullOrPartTime">Seeking</label>
+              <select id="fullOrPartTime" class="form-control custom-select">
+                <option value="full-part">Full or Part Time</option>
+                <option value="full">Full Time</option>
+                <option value="part">Part Time</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="stay">Seeking (Live In/Out)</label>
+              <select id="stay" class="form-control custom-select">
+                <option value="in-out">Live-in or Live-out</option>
+                <option value="in">Live-in</option>
+                <option value="out">Live-out</option>
+              </select>
+            </div>
+          </form>
           <div class="shadedarea">
             <h6>EMPLOYER INFORMATION</h6>
-          </div><br>
-          <div class="range-labels">
-            <fieldset>
-              <label for="rangeVal">Weekly Rate Range in Kes.:</label>
-              <input type ="range" max="25000" min="1000"
-                  oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
-                  step="5" name="rangeVal" id="rangeVal" value="">
-              </input>
-              <em id="rangeValLabel" style="font-style: normal;"></em>
-            </fieldset>
-        </div>
-          Family Age-range<select id="familyagerange">
-            <option value="20">20something</option>
-            <option value="30">30something</option>
-            <option value="40">40something</option>
-            <option value="50">50something</option> 
-            <option value="60">60something</option>
-            <option value="70">70something</option>
-            <option value="80">80something</option>
-            <option value="90">90something</option>
-          </select><br>
-          Preferred Candidate age<select id="ageOfHelp">
-            <option value="18">18-30</option>
-            <option value="26">31-40</option>
-            <option value="31">41-50</option>
-            <option value="51">51-60</option>
-          </select><br>
+          </div>
+          <form id="generalInfo">
+            <div class="form-group">
+              <label for="rateRange">Weekly Rate Range in KES</label>
+              <input type="range" class="form-control-range" id="rateRange" min="18" max="75" />
+            </div>
+            <div class="form-group">
+              <label for="familyPreference">Type of Family</label>
+              <select id="familyPreference" class="form-control custom-select">
+                <option value="singles">Singles Only</option>
+                <option value="couples">Couples Only</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="familyPreference">Family Age-range</label>
+              <select id="familyPreference" class="form-control custom-select">
+                <option value="20">20 something</option>
+                <option value="30">30 something</option>
+                <option value="40">40 something</option>
+                <option value="50">50 something</option>
+                <option value="60">60 something</option>
+                <option value="70">70 something</option>
+                <option value="80">80 something</option>
+                <option value="90">90 something</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="familyPreference">Preferred Candidate Age</label>
+              <select id="familyPreference" class="form-control custom-select">
+                <option value="18">18-30</option>
+                <option value="26">31-40</option>
+                <option value="31">41-50</option>
+                <option value="51">51-60</option>
+              </select>
+            </div>
+          </form>
           <div class="shadedarea">
             <h6>EXPERIENCE AND EDUCATION</h6>
-          </div><br>
-          <!-- Years of Experience required<input type="range" name="experience" min="0" max="50"> -->
-          <div class="range-labels" id="experienceyears">
-            <fieldset>
-              <label for="rangeVal-experience">Years of Experience required:</label>
-              <input type ="range" max="50" min="0"
-                  oninput="document.getElementById('rangeValLabel-exp').innerHTML = this.value;"
-                  step="5" name="rangeValExp" id="rangeValExp" value="">
-              </input>
-              <em id="rangeValLabel-exp" style="font-style: normal;"></em>
+          </div>
+          <form id="experienceEdu">
+            <div class="form-group">
+              <label for="yearsOfExperience">Years of Experience required</label>
+              <input type="range" class="form-control-range" id="yearsOfExperience" min="0" max="50" />
+            </div>
+            <div class="form-group">
+              <label for="yearsOfEducation">Years of Education required</label>
+              <input type="range" class="form-control-range" id="yearsOfEducation" min="0" max="30" />
+            </div>
+          </form>
+          <form id="jobRequirements">
+            <fieldset id="jobRequirements" class="form-group" form="pizzaCraft">
+              <legend class="col-form-label">Job Requirements</legend>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" id="houseKeeping" type="checkbox" value="30" />
+                    <label class="form-check-label" for="houseKeeping">Housekeeping</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="shoppingErrands" type="checkbox" value="50" />
+                    <label class="form-check-label" for="shoppingErrands">Shopping & Errands</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="infantCare" type="checkbox" value="45" />
+                    <label class="form-check-label" for="infantCare">Infant Care</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="specNeedsCare" type="checkbox" value="70" />
+                    <label class="form-check-label" for="specNeedsCare">Special Needs Care</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="disabledCare" type="checkbox" value="20" />
+                    <label class="form-check-label" for="disabledCare">Disabled Care</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" id="elderCare" type="checkbox" value="60" />
+                    <label class="form-check-label" for="elderCare">Elder Care</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="petCare" type="checkbox" value="70" />
+                    <label class="form-check-label" for="petCare">Pet Care</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="officeAssist" type="checkbox" value="70" />
+                    <label class="form-check-label" for="officeAssist">Office Assistance</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="touring" type="checkbox" value="70" />
+                    <label class="form-check-label" for="touring">Tutoring</label>
+                  </div>
+                </div>
+              </div>
             </fieldset>
-        </div>
-          <!-- Years of Education required<input type="range" name="experience" min="0" max="30"><br> -->
-          <div class="range-labels" id="educationyears">
-            <fieldset>
-              <label for="rangeVal-education">Years of Education required:</label>
-              <input type ="range" max="30" min="0"
-                  oninput="document.getElementById('rangeValLabel-edu').innerHTML = this.value;"
-                  step="1" name="rangeValEdu" id="rangeValEdu" value="">
-              </input>
-              <em id="rangeValLabel-edu" style="font-style: normal;"></em>
-            </fieldset>
-        </div>
-          Job Requirements
-          <hr>
-          <input type="checkbox" class="jobrequirements" value="Housekeeping">Housekeeping<br>
-          <input type="checkbox" class="jobrequirements" value="Shopping & Errands">Shopping & Errands<br>
-          <input type="checkbox" class="jobrequirements" value="Infant Care">Infant Care<br>
-          <input type="checkbox" class="jobrequirements" value="Special Needs Care">Special Needs Care<br>
-          <input type="checkbox" class="jobrequirements" value="Disabled Care">Disabled Care<br>
-          <input type="checkbox" class="jobrequirements" value="Elder Care">Elder Care<br>
-          <input type="checkbox" class="jobrequirements" value="Pet Care">Pet Care<br>
-          <input type="checkbox" class="jobrequirements" value="Office Assistance">Office Assistance<br>
-          <input type="checkbox" class="jobrequirements" value="Tutoring">Tutoring<br><br>
-        </div>
+          </form>
         </div>
       </div>
-
-</div>
-</body>
+    </div>
+  </body>
 </html>

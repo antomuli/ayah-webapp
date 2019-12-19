@@ -1,3 +1,4 @@
+<!-- This page is for login in. A popup with the log in section appears and index.html is covered until successfully logged in. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,24 +12,25 @@
     <title>Ayah</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
-      <a class="navbar-brand" href="index.html">Ayah WebApp</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" id="find" onclick="window.location.href = 'find.html';">Find Job</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="hire" onclick="window.location.href = 'hire.html';">Hire</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="log.html">Log in</a></li>
-          <li class="nav-item"><a class="nav-link" href="sign.html">Sign up</a></li>
-        </ul>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <div class="row">
+            <div class="column">
+              <ul>
+                <a href="index.html">Home</a>
+                <button id="find" onclick="window.location.href = 'find.html';">Find Job</button>
+                <!-- <a href="find.html">Find job</a> -->
+                <button id="hire" onclick="window.location.href = 'hire.html';">Find help</button>
+                <!-- <a href="hire.html">Hire</a> -->
+                <a href="login.html">Log in</a>
+                <a href="sign.html">Sign up</a>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
     <div class="body container">
       <div class="textonimage">
       <h1>GIVE CARE</h1>

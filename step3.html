@@ -1,0 +1,154 @@
+<!-- This page will be used to create profiles for every employer sign in. It will also show in the results. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>Ayah</title>
+  </head>
+  <body style="height: 100vh;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+      <a class="navbar-brand" href="index.html">Ayah WebApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="find" onclick="window.location.href = 'find.html';">Find Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hire" onclick="window.location.href = 'hire.html';">Hire</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="log.html">Log in</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign.html">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 card textdiv">
+          <p class="text-center">
+            Ayah helps you to find access to numerous nanny jobs or help you get a nanny for your family<br />
+            Join us today to become part of the Ayah Community who have found opportunities as nannies with great
+            families or got a nanny through Ayah.<br />
+            We value your privacy and any private information will be kept strictly confidential.
+          </p>
+        </div>
+        <div class="col-md-6 card registrationform">
+          <form id="registrationForm">
+            <div class="form-group">
+              <div class="employerpitch">
+             <h3>Promote your Job</h3>
+             <hr>
+             <input type="textarea" max="60">
+              </div>
+              <hr>
+              <h3>Availability </h3>
+              <hr>
+              <div class="form-group">
+                <label for="startingdate">Earliest starting date</label>
+                <select id="startingdate" class="form-control custom-select">
+                  <option value="1">As soon as possible</option>
+                  <option value="2">In a week's time</option>
+                  <option value="3">In a month's time</option>
+                  <option value="4">In 3 month's time</option>
+                </select>
+              </div>
+              <div class="workPreference">
+                This position is <input type="radio" name="workPreference" value="Live-out" />Full-time
+                <input type="radio" name="workPreference" value="Live-in" />Part-time
+              </div>
+              <div class="stay">
+                Preferred living arrangements:
+                <input type="radio" name="stay" value="daybug" />Live-out
+                <input type="radio" name="stay" value="inhouse" />Live-in
+                <input type="radio" name="stay" value="either" />Either
+              </div>
+              <hr>
+              <h3>Our Family</h3>
+              <hr>
+              <div class="maritalStatus">
+                Are you a single parent: <input type="radio" name="maritalStatus" value="Single" />Yes
+                <input type="radio" name="maritalStatus" value="Married" />No
+              </div><br>
+              
+              <div class="childrenagelevel">
+              Children age Level(s) 
+              <label id="checked"></label>
+          <input type="checkbox" class="childrenagelevel" value="Infant">Infant<br>
+          <input type="checkbox" class="childrenagelevel" value="Toddler">Toddler<br>
+          <input type="checkbox" class="childrenagelevel" value="Ages 4-11">Ages 4-11<br>
+          <input type="checkbox" class="childrenagelevel" value="Preteen">Preteen<br>
+          <input type="checkbox" class="childrenagelevel" value="Teen">Teen<br>
+          <input type="checkbox" class="childrenagelevel" value="Twins">Twins<br>
+          <input type="checkbox" class="childrenagelevel" value="Special Needs">Special Needs<br>
+        </label>
+      </div>
+      <br>
+      <h3>Job Requirements</h3>
+      <hr>
+      <p>My nanny must have the following requirements</p>
+      <div class="range-labels" id="experienceyears">
+        <fieldset>
+          <label for="rangeVal-experience">Years of Experience:</label>
+          <input type ="range" max="50" min="0"
+              oninput="document.getElementById('rangeValLabel-exp').innerHTML = this.value;"
+              step="1" name="rangeValExp" id="rangeValExp" value="">
+          </input>
+          <em id="rangeValLabel-exp" style="font-style: normal;"></em>
+        </fieldset>
+    </div>
+    Our Job requires:
+    <label id="checked">
+      <input type="checkbox" class="jobrequirements" value="Housekeeping">Housekeeping<br>
+      <input type="checkbox" class="jobrequirements" value="Shopping & Errands">Shopping & Errands<br>
+      <input type="checkbox" class="jobrequirements" value="Infant Care">Infant Care<br>
+      <input type="checkbox" class="jobrequirements" value="Special Needs Care">Special Needs Care<br>
+      <input type="checkbox" class="jobrequirements" value="Disabled Care">Disabled Care<br>
+      <input type="checkbox" class="jobrequirements" value="Elder Care">Elder Care<br>
+      <input type="checkbox" class="jobrequirements" value="Pet Care">Pet Care<br>
+      <input type="checkbox" class="jobrequirements" value="Office Assistance">Office Assistance<br>
+      <input type="checkbox" class="jobrequirements" value="Tutoring">Tutoring<br><br>
+      </label><br><br><hr>
+      <h3>Job Description</h3>
+      Write a detailed job description explaining the role and benefits for this job.
+      <input type="textarea" max="5000">
+      <br>
+      
+      <h3>Dear candidate</h3>
+      Introduce your family to the potential candidates here
+      <input type="textarea" max="5000">
+      <br><br><hr>
+
+      </div>
+
+            
+            <button type="submit" class="btn btn-primary" id="saveandcontinue">Save &amp; Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
