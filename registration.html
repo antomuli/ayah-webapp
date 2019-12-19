@@ -14,7 +14,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <title>Ayah</title>
   </head>
-  <body style="height: 100vh;">
+  <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
       <a class="navbar-brand" href="index.html">Ayah WebApp</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -34,7 +34,6 @@
       </div>
     </nav>
     <div class="container">
-      <!-- I need your au pair login details -->
       <div class="row justify-content-center">
         <div class="col-md-4 card textdiv">
           <p class="text-center">
@@ -52,13 +51,13 @@
             </div>
             <div class="form-group">
               <label for="emailAddress">Email Address</label>
-              <input type="email" class="form-control" id="emailAddress" placeholder="Enter email" />
+              <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address" />
             </div>
             <div class="form-group">
               <label for="phoneNumber">Phone Number</label>
               <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phone number" />
             </div>
-            <div class="form-group">
+            <div id="seekOrHire" class="form-group">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="seekOrHire" id="jobSeeker" value="jobSeeker" />
                 <label class="form-check-label" for="jobSeeker">Job Seeker</label>
@@ -70,18 +69,18 @@
             </div>
             <div class="form-group">
               <label for="fullName">Location</label>
-              <select id="location" class="form-control custom-select">
-                <option value="1">Nairobi</option>
-                <option value="2">Coast</option>
-                <option value="3">Central Kenya</option>
-                <option value="4">Eastern Kenya</option>
-                <option value="5">Rift Valley</option>
-                <option value="6">North Eastern Kenya</option>
-                <option value="7">Western Kenya</option>
-                <option value="8">Nyanza</option>
+              <select id="residence" class="form-control custom-select">
+                <option value="nairobi">Nairobi</option>
+                <option value="coast">Coast</option>
+                <option value="central">Central Kenya</option>
+                <option value="eastern">Eastern Kenya</option>
+                <option value="rift-valley">Rift Valley</option>
+                <option value="north-eastern">North Eastern Kenya</option>
+                <option value="western">Western Kenya</option>
+                <option value="nyanza">Nyanza</option>
               </select>
             </div>
-            <div class="form-group">
+            <div id="readAgree" class="form-group">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" id="readTCs" type="checkbox" />
                 <label class="form-check-label" for="readTCs"
@@ -112,6 +111,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
