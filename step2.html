@@ -1,0 +1,163 @@
+<!-- This is the second step for family after filling in registration form.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="css/stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ayah</title>
+</head>
+    <div class="container">
+      <div class="header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="find" onclick="window.location.href = 'find.html';">Find Job</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="hire" onclick="window.location.href = 'hire.html';">Hire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="log.html">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sign.html">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="body container">
+        <div class = row>
+          <div class = "col-4 card textdiv">
+            <div class="textblock">
+              <p>We know how heart wrenching it can get to gind someone who matches you and your family needs.<br>
+                A detailed answer will help us get the right match for your needs.
+              </p>
+            </div>
+          </div>
+          <div class = "col-6 card registrationform">
+            <div class="householdSubmitForm card">
+              <h3>Job Credentials and Experiences</h3>
+              <hr>
+              <p>We would like ...</p>
+              <div class="helpGender">
+              Candidates' gender to be <input type="radio" name="househelpGender" value="Female" />Female
+              <input type="radio" name="househelpGender" value="Male" />Male
+              <input type="radio" name="househelpGender" value="None" />No workPreference
+            </div><br>
+            <div class="preferredEducation">
+              Most recent level of education:
+              <select>
+                <option value="Primary">Primary school Level</option>
+                <option value="Secondary">Secondary/High school Level</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Vocational">Primary Level</option>
+              </select>
+            </div><br>
+            <div class="preferredSkills">
+              Particular skills <input type="text-area" name="Skills" />
+            </div>
+            <br><hr>
+            <h3>Job Match Details</h3>
+            <hr>
+            <div class="location">
+              Accept candidates that live within
+              <select>
+                <option value="1">Nairobi</option>
+                <option value="2">Coast</option>
+                <option value="3">Central Kenya</option>
+                <option value="4">Eastern Kenya</option>
+                <option value="5">Rift Valley</option>
+                <option value="6">North Eastern Kenya</option>
+                <option value="7">Western Kenya</option>
+                <option value="8">Nyanza</option>
+              </select>
+            </div> 
+            <div class="workPreference">
+              Work offer <input type="radio" name="workPreference" value="Live-out" />Full-time
+              <input type="radio" name="workPreference" value="Live-in" />Part-time
+            </div>
+            Living arrangements
+            <div class="stay">
+              <input type="radio" name="stay" value="daybug" />Live-out
+              <input type="radio" name="stay" value="inhouse" />Live-in
+            </div>
+            <div class="hoursperweek">
+              Number of hours per week
+              <input type="number" min="1" max="18">
+            </div><br>
+            <div class="range-labels">
+              <fieldset>
+                <label for="rangeVal">Weekly Rate Range in Kes.:</label>
+                <input type ="range" max="25000" min="1000"
+                    oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+                    step="5" name="rangeVal" id="rangeVal" value="">
+                </input>
+                <em id="rangeValLabel" style="font-style: normal;"></em>
+              </fieldset>
+          </div><br>
+          <div class="ageOfHelp">
+            Ideal candidate age range
+            <select id="ageOfHelp">
+              <option value="18">18-30</option>
+              <option value="26">31-40</option>
+              <option value="31">41-50</option>
+              <option value="51">51-60</option>
+            </select>
+          </div><br>
+                <div class="maritalStatus">
+                  Are you a single employer? <input type="radio" name="maritalStatus" value="Single" />Single
+                  <input type="radio" name="maritalStatus" value="Married" />Married
+                </div>
+                <div class="helpsmokingcondition">
+                  Would you mind smokers? <input type="radio" name="helpsmokingcondition" value="Yes" />Yes
+                  <input type="radio" name="helpsmokingcondition" value="No" />No
+                </div><br>
+                <div class="employersmokingcondition">
+                  Do you smoke? <input type="radio" name="employersmokingcondition" value="Yes" />Yes
+                  <input type="radio" name="employersmokingcondition" value="No" />No
+                </div><br>
+                <div class="childrenOption">
+                  Do you have any children? <input type="radio" name="children" value="No" />No
+                  <input type="radio" name="children" value="Yes" />Yes
+                </div>
+                <div class="pets">
+                  Do you have any pets? <input type="radio" name="pets" value="Yes" />Yes
+                  <input type="radio" name="pets" value="No" />No
+                </div><br>
+                <hr>
+                <h3>Password Security</h3>
+                <p>Your birthday and security question will be used to reset your password in case you forget it.</p>
+                <br><br>
+                Date of Birth: <input type="date" name="dateOfBirth" value="" min="2018-01-01" max="2018-12-31" /><br>
+                <div class="securityquestion">
+                  Security question <select>
+                    <option value="nickname">What was your childhood nickname?</option>
+                    <option value="street">What street did you live on in third grade?</option>
+                    <option value="school">What school did you attend for sixth grade?</option>
+                    <option value="grandmaname">What is your maternal grandmother's maiden name?</option>
+                  </select>  
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary" id="saveandcontinue">Save &amp; Continue</button>
+
+              </form>
+            </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
