@@ -1,33 +1,27 @@
 * {
   box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Acme', sans-serif;
 }
 body {
   font-family: Verdana, sans-serif;
-}
-.mySlides {
-  display: none;
-}
-img {
-  vertical-align: middle;
+  background-image: url("../css/bkgrnd/nanny1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
 
 /* Hey checkout the registration page...
 Its more bootstrap but if you could try use the pattern itakuja through very easily */
 /* Text over slideshow */
-.textonimage {
+/* .textonimage {
  position: absolute; 
  top: 200px; 
  float:left;
  padding-left: 1%;
   
-}
+} */
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -62,7 +56,7 @@ Its more bootstrap but if you could try use the pattern itakuja through very eas
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -94,14 +88,7 @@ Its more bootstrap but if you could try use the pattern itakuja through very eas
     font-size: 11px;
   }
 }
-/* button {
-  color:red;
-}  */
-/* .card,
-input {
-  padding: 1%;
-  display: block;
-} */
+
 span .radioInline {
   display: inline-block;
 }
@@ -142,4 +129,15 @@ button {
   display:block;
   padding-top:65%;
   padding-bottom: 25%;
+}
+#submit{
+  text-decoration: none;
+}
+#submit2 a{
+  display: inline;
+  text-decoration: none;
+}
+
+.footer{
+  padding-top: 60%;
 }
