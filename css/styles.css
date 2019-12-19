@@ -97,11 +97,11 @@ Its more bootstrap but if you could try use the pattern itakuja through very eas
 /* button {
   color:red;
 }  */
-.card,
+/* .card,
 input {
   padding: 1%;
   display: block;
-}
+} */
 span .radioInline {
   display: inline-block;
 }
@@ -127,9 +127,9 @@ button {
   opacity:1;
 } */
 /* Styling for hire page */
-.hirecard {
+/* .hirecard {
   float: left;
-}
+} */
 .shadedarea {
   color: aqua;
   opacity: 0.8;
