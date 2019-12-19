@@ -37,29 +37,35 @@
             <h6>LOCATION AND AVAILABILITY</h6>
           </div>
           <form id="searchFilters">
-            <label for="residence">Candidates who live in:</label>
-            <select id="residence" class="form-control custom-select">
-              <option value="nairobi">Nairobi</option>
-              <option value="coast">Coast</option>
-              <option value="central">Central Kenya</option>
-              <option value="eastern">Eastern Kenya</option>
-              <option value="rift-valley">Rift Valley</option>
-              <option value="north-eastern">North Eastern Kenya</option>
-              <option value="western">Western Kenya</option>
-              <option value="nyanza">Nyanza</option>
-            </select>
-            <label for="fullOrPartTime">Seeking</label>
-            <select id="fullOrPartTime" class="form-control custom-select">
-              <option value="full-part">Full or Part Time</option>
-              <option value="full">Full Time</option>
-              <option value="part">Part Time</option>
-            </select>
-            <label for="stay">Seeking (Live In/Out)</label>
-            <select id="stay" class="form-control custom-select">
-              <option value="in-out">Live-in or Live-out</option>
-              <option value="in">Live-in</option>
-              <option value="out">Live-out</option>
-            </select>
+            <div class="form-group">
+              <label for="residence">Candidates who live in:</label>
+              <select id="residence" class="form-control custom-select">
+                <option value="nairobi">Nairobi</option>
+                <option value="coast">Coast</option>
+                <option value="central">Central Kenya</option>
+                <option value="eastern">Eastern Kenya</option>
+                <option value="rift-valley">Rift Valley</option>
+                <option value="north-eastern">North Eastern Kenya</option>
+                <option value="western">Western Kenya</option>
+                <option value="nyanza">Nyanza</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fullOrPartTime">Seeking</label>
+              <select id="fullOrPartTime" class="form-control custom-select">
+                <option value="full-part">Full or Part Time</option>
+                <option value="full">Full Time</option>
+                <option value="part">Part Time</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="stay">Seeking (Live In/Out)</label>
+              <select id="stay" class="form-control custom-select">
+                <option value="in-out">Live-in or Live-out</option>
+                <option value="in">Live-in</option>
+                <option value="out">Live-out</option>
+              </select>
+            </div>
           </form>
           <div class="shadedarea">
             <h6>GENERAL INFORMATION</h6>
@@ -73,33 +79,26 @@
               <label for="rateRange">Weekly Rate Range in KES</label>
               <input type="range" class="form-control-range" id="rateRange" min="18" max="75" />
             </div>
-            <div id="seekOrHire" class="form-group">
-              <div class="form-check form-check-inline">
-                Gender
-                <input class="form-check-input" type="radio" name="gender" id="female" value="female" />
-                <label class="form-check-label" for="female">Job Seeker</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="gender" id="male" value="male" />
-                <label class="form-check-label" for="male">Family</label>
-              </div>
+            <div class="form-group">
+              <label for="familyPreference">Type of Family</label>
+              <select id="familyPreference" class="form-control custom-select">
+                <option value="singles">Singles Only</option>
+                <option value="couples">Couples Only</option>
+              </select>
             </div>
-            <label for="familyPreference">Type of Family</label>
-            <select id="familyPreference" class="form-control custom-select">
-              <option value="singles">Singles Only</option>
-              <option value="couples">Couples Only</option>
-            </select>
-            <label for="familyPreference">Family Age-range</label>
-            <select id="familyPreference" class="form-control custom-select">
-              <option value="20">20 something</option>
-              <option value="30">30 something</option>
-              <option value="40">40 something</option>
-              <option value="50">50 something</option>
-              <option value="60">60 something</option>
-              <option value="70">70 something</option>
-              <option value="80">80 something</option>
-              <option value="90">90 something</option>
-            </select>
+            <div class="form-group">
+              <label for="familyPreference">Family Age Range</label>
+              <select id="familyPreference" class="form-control custom-select">
+                <option value="20">20 something</option>
+                <option value="30">30 something</option>
+                <option value="40">40 something</option>
+                <option value="50">50 something</option>
+                <option value="60">60 something</option>
+                <option value="70">70 something</option>
+                <option value="80">80 something</option>
+                <option value="90">90 something</option>
+              </select>
+            </div>
           </form>
           <div class="shadedarea">
             <h6>EXPERIENCE AND EDUCATION</h6>
